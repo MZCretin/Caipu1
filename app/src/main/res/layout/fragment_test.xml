@@ -5,17 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.fangrongjie.www.srjie.fragment.TestFragment">
-
-    <Button
-        android:id="@+id/btn"
-        android:text="load data"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+    tools:context=".fragment.TestFragment">
 
     <TextView
         android:id="@+id/textview"
+        android:text="嘻嘻嘻"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"/>
