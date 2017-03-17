@@ -5,10 +5,42 @@
               android:background="#FFFFFF"
               android:orientation="vertical">
 
-   <TextView
-       android:text="哈哈"
+   <com.cretin.www.caipu.view.NoScrollViewPager
+       android:id="@+id/view_pager"
        android:layout_width="match_parent"
-       android:layout_height="match_parent"/>
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+       android:layout_weight="1" />
+
+   <include layout="@layout/line"></include>
+
+   <RadioGroup
+       android:id="@+id/rg_group"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/app_background_color"
+       android:orientation="horizontal">
+
+      <RadioButton
+          android:id="@+id/rb_home"
+          style="@style/BottomTabStyle"
+          android:checked="false"
+          android:drawableTop="@drawable/btn_tab_search_selector"
+          android:text="搜菜谱" />
+
+      <RadioButton
+          android:id="@+id/rb_product"
+          style="@style/BottomTabStyle"
+          android:drawableTop="@drawable/btn_tab_type_selector"
+          android:text="菜谱分类" />
+
+      <RadioButton
+          android:id="@+id/rb_message"
+          style="@style/BottomTabStyle"
+          android:drawableTop="@drawable/btn_tab_more_selector"
+          android:text="更   多" />
+   </RadioGroup>
 
 </LinearLayout>
 

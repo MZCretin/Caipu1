@@ -1,0 +1,88 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/home_backgroup"
+    tools:context="com.cretin.www.caipu.fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginRight="16dp"
+            android:layout_gravity="right"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/frame_top_appname"/>
+
+        <LinearLayout
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_transparent_shape_fill5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_white_shape_fill5"
+                android:drawableLeft="@mipmap/i_ico_search"
+                android:drawablePadding="5dp"
+                android:hint="搜索您想要的菜"
+                android:paddingLeft="14dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:textSize="@dimen/text_size_14"/>
+
+            <RelativeLayout
+                android:id="@+id/rela_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="2dp"
+                        android:text="美食小知识"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:text="春季吃这8种食物最养生"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <com.cretin.www.caipu.view.CircleImageView
+                    android:layout_width="42dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/update_main"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
