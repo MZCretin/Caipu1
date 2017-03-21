@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/common_dialog_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg_selector_left_right_top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:text="温馨提示!"
+            android:textColor="@color/text_color_title"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_grey" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:minHeight="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg_selector_left_right_top"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:text="确定要退出登录?"
+        android:textColor="#030303"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_grey" />
+
+    <LinearLayout
+        android:id="@+id/dialog_two_btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/dialog_bg_selector_left_right_bottom"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_item_bg_selector_left_bottom"
+            android:text="取消"
+            android:textColor="@color/text_gray_next"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/light_grey" />
+
+        <Button
+            android:id="@+id/button_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_item_bg_selector_right_bottom"
+            android:text="确定"
+            android:textColor="@color/common_color"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_one_btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/dialog_bg_selector_left_right_bottom"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/button_confirm_only"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_item_bg_selector_left_right_bottom"
+            android:text="确定"
+            android:textColor="@color/common_color"
+            android:textSize="17sp" />
+    </LinearLayout>
+</LinearLayout>

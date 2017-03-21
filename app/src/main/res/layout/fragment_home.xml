@@ -68,7 +68,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="2dp"
-                        android:text="春季吃这8种食物最养生"
+                        android:text="草莓竟有这8种养生奇效"
                         android:textColor="@color/white"
                         android:textSize="12sp"/>
                 </LinearLayout>

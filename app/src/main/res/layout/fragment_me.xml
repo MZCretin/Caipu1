@@ -1,0 +1,270 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_selector"
+        android:clickable="true">
+
+        <com.cretin.www.caipu.view.CircleImageView
+            android:id="@+id/iv_portrait"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="16dp"
+            android:src="@mipmap/mrtx"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_portrait">
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:text="账号: 13713788888"
+                android:textColor="@color/font_black2"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="林小妹"
+                android:textColor="@color/font_black1"
+                android:textSize="17sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/arrow_right"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_cainixihuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg_selector"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/like"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="12dp"
+                android:text="猜你喜欢"
+                android:textColor="@color/font_black1"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/arrow_right"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:textColor="@color/font_black4"
+                android:textSize="@dimen/text_size_14"/>
+        </LinearLayout>
+
+        <include layout="@layout/left_padding_line"/>
+
+        <LinearLayout
+            android:id="@+id/ll_guanyuwomen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg_selector"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/gywm"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="12dp"
+                android:text="关于我们"
+                android:textColor="@color/font_black1"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:id="@+id/tv_invite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/arrow_right"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:textColor="@color/font_black4"
+                android:textSize="@dimen/text_size_14"/>
+        </LinearLayout>
+
+        <include layout="@layout/left_padding_line"/>
+
+        <LinearLayout
+            android:id="@+id/ll_wodeshoucang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg_selector"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/shoucang"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="12dp"
+                android:text="我的收藏"
+                android:textColor="@color/font_black1"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:id="@+id/tv_zizhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/arrow_right"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:textColor="@color/font_black4"
+                android:textSize="@dimen/text_size_14"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_clearcache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg_selector"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/setting"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="12dp"
+                android:text="清除缓存"
+                android:textColor="@color/font_black1"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:id="@+id/tv_cache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/arrow_right"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="10.8M"
+                android:textColor="@color/font_black4"
+                android:textSize="@dimen/text_size_14"/>
+        </LinearLayout>
+
+        <include layout="@layout/left_padding_line"/>
+
+        <TextView
+            android:id="@+id/tv_yonghuxieyi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg_selector"
+            android:drawableLeft="@mipmap/yhxy"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/arrow_right"
+            android:gravity="center_vertical"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp"
+            android:paddingTop="12dp"
+            android:text="用户协议"
+            android:textColor="@color/font_black1"
+            android:textSize="@dimen/text_size_14"/>
+
+        <include layout="@layout/left_padding_line"/>
+
+        <TextView
+            android:id="@+id/tv_forget_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg_selector"
+            android:drawableLeft="@mipmap/xgmm"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/arrow_right"
+            android:gravity="center_vertical"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp"
+            android:paddingTop="12dp"
+            android:text="修改密码"
+            android:textColor="@color/font_black1"
+            android:textSize="@dimen/text_size_14"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/item_bg_selector"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingBottom="14dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="10dp"
+        android:paddingTop="14dp"
+        android:text="安全退出"
+        android:textColor="@color/app_title_color"
+        android:textSize="@dimen/text_size_14"/>
+</LinearLayout>

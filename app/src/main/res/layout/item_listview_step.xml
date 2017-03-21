@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="25dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="5dp"
+    android:paddingRight="25dp">
+
+    <TextView
+        android:id="@+id/tv_nums"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1."
+        android:textColor="@color/secondary_text_color"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="7dp"
+            android:text="香菇洗净用剪刀剪去菌柄放烤盘上备用"
+            android:textColor="@color/font_black1"
+            android:textSize="14sp"
+            android:id="@+id/tv_des"/>
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/iv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+</LinearLayout>

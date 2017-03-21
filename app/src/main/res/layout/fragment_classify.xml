@@ -15,11 +15,12 @@
         android:paddingRight="10dp">
 
         <LinearLayout
+            android:id="@+id/ll_jcc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
-            android:background="@color/white"
+            android:background="@drawable/item_bg_selector"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -48,11 +49,12 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/ll_cyc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
-                android:background="@color/white"
+                android:background="@drawable/item_bg_selector"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -86,11 +88,12 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll_ksc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
-                android:background="@color/white"
+                android:background="@drawable/item_bg_selector"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -131,11 +134,12 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/ll_sc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
-                android:background="@color/white"
+                android:background="@drawable/item_bg_selector"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -169,11 +173,12 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll_lc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
-                android:background="@color/white"
+                android:background="@drawable/item_bg_selector"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -208,17 +213,17 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/ll_hp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@color/white"
+            android:background="@drawable/item_bg_selector"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/white"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -254,10 +259,11 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/ll_ms"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@color/white"
+            android:background="@drawable/item_bg_selector"
             android:orientation="horizontal">
 
             <ImageView
@@ -272,7 +278,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/white"
                 android:gravity="center"
                 android:orientation="vertical">
 

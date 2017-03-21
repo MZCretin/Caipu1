@@ -19,6 +19,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
 }
 
 buildscript {
@@ -37,10 +42,17 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    compile('cn.bmob.android:bmob-sdk:3.5.0') {
+        exclude module: 'gson'
+    }
+    compile('com.github.orhanobut:hawk:1.21') {
+        exclude module: 'gson'
+    }
     compile 'com.android.support:appcompat-v7:25.0.0'
-    compile 'com.qy.easyframe:easyframe:3.0.0'
     compile 'com.jakewharton:butterknife:7.0.0'
-    compile 'com.github.orhanobut:hawk:1.21'
     compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:design:24.2.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
     testCompile 'junit:junit:4.12'
 }

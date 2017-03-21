@@ -14,6 +14,7 @@ import com.cretin.www.caipu.base.BaseActivity;
 import com.cretin.www.caipu.base.BaseFragment;
 import com.cretin.www.caipu.fragment.ClassifyFragment;
 import com.cretin.www.caipu.fragment.HomeFragment;
+import com.cretin.www.caipu.fragment.MeFragment;
 import com.cretin.www.caipu.fragment.TestFragment;
 import com.cretin.www.caipu.utils.UiUtils;
 import com.cretin.www.caipu.view.NoScrollViewPager;
@@ -150,7 +151,7 @@ public class MainActivity extends BaseActivity {
             } else if ( position == 1 ) {
                 fragment = new ClassifyFragment();
             } else if ( position == 2 ) {
-                fragment = new TestFragment();
+                fragment = new MeFragment();
             }
             if ( fragment != null ) {
                 mFragments.put(position, fragment);// 把创建好的Fragment存放到集合中缓存起来

@@ -1,0 +1,16 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/swipe_refresh"
+    android:layout_height="match_parent"
+    tools:context="com.cretin.www.caipu.fragment.MyLoveFragment">
+
+    <com.cretin.www.caipu.view.AutoRefreshListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/listview_divider"
+        android:dividerHeight="1dp"/>
+
+</android.support.v4.widget.SwipeRefreshLayout>

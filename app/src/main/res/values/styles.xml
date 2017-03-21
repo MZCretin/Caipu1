@@ -31,6 +31,11 @@
         <item name="android:windowNoTitle">true</item>
     </style>
 
+    <style name="LoginRegisterTabTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
     <!-- 低栏RadioButton的样式 -->
     <style name="BottomTabStyle">
         <item name="android:layout_width">0dp</item>

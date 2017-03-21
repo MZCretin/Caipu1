@@ -20,8 +20,6 @@ import com.cretin.www.caipu.utils.ViewUtils;
 import com.cretin.www.caipu.view.CustomProgressDialog;
 
 import butterknife.ButterKnife;
-import rx.Subscription;
-import rx.subscriptions.CompositeSubscription;
 
 
 /**
@@ -95,20 +93,10 @@ public abstract class BaseFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         ButterKnife.unbind(this);
-        if ( this.mCompositeSubscription != null ) {
-            this.mCompositeSubscription.unsubscribe();
-        }
     }
 
     private AnimationDrawable animationDrawable;
-    private CompositeSubscription mCompositeSubscription;
 
-    protected void addSubscription(Subscription s) {
-        if ( this.mCompositeSubscription == null ) {
-            this.mCompositeSubscription = new CompositeSubscription();
-        }
-        this.mCompositeSubscription.add(s);
-    }
 
     private void initContentView(View view, Bundle savedInstanceState) {
         container = ( LinearLayout ) view.findViewById(R.id.ll_content);
@@ -215,9 +203,9 @@ public abstract class BaseFragment extends Fragment {
     public void showDialog(String msg) {
         if ( dialog == null ) {
             dialog = CustomProgressDialog.createDialog(getActivity());
-            if ( msg != null && !msg.equals("") ) {
-                dialog.setMessage(msg);
-            }
+        }
+        if ( msg != null && !msg.equals("") ) {
+            dialog.setMessage(msg);
         }
         dialog.show();
     }

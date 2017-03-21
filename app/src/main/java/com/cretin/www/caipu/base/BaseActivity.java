@@ -16,11 +16,6 @@ import com.cretin.www.caipu.utils.ViewUtils;
 import com.cretin.www.caipu.view.CustomProgressDialog;
 
 import butterknife.ButterKnife;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import rx.Subscription;
-import rx.subscriptions.CompositeSubscription;
 
 /**
  * Created by cretin on 16/10/27.
@@ -41,15 +36,6 @@ public abstract class BaseActivity extends ParentActivity {
 
     private RelativeLayout relaLoadContainer;
     private TextView tvLoadingMsg;
-
-    private CompositeSubscription mCompositeSubscription;
-
-    protected void addSubscription(Subscription s) {
-        if (this.mCompositeSubscription == null) {
-            this.mCompositeSubscription = new CompositeSubscription();
-        }
-        this.mCompositeSubscription.add(s);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,25 +59,6 @@ public abstract class BaseActivity extends ParentActivity {
         ButterKnife.bind(this, v);
         container.addView(v, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
         initView(v);
-    }
-
-    //onResponse子类去实现
-    public abstract class ResultCall<T> implements Callback<T> {
-        @Override
-        public void onResponse(Call<T> call, Response<T> response) {
-            hidProgressView();
-            onResponse(response);
-        }
-
-        protected abstract void onResponse(Response<T> response);
-
-        @Override
-        public void onFailure(Call<T> call, Throwable t) {
-            showErrorView();
-            onError(call, t);
-        }
-
-        protected abstract void onError(Call<T> call, Throwable t);
     }
 
     //隐藏正在加载视图
@@ -257,8 +224,5 @@ public abstract class BaseActivity extends ParentActivity {
     protected void onDestroy() {
         super.onDestroy();
         ButterKnife.unbind(this);
-        if (this.mCompositeSubscription != null) {
-            this.mCompositeSubscription.unsubscribe();
-        }
     }
 }

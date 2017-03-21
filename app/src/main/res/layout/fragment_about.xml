@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:gravity="center"
+             android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:lineSpacingExtra="4dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/app_title_color"
+        android:text="我们是谁？\n我们是有梦想的少年。\n专注开发，\n热爱开发，\n我们坚信我们能够创造一片属于我们的蓝天\n联系我：\nmxnzp_life@163.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg_color"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="手机号"
+                android:textColor="#4a4a4a"
+                android:textSize="@dimen/text_size_14"/>
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入手机号"
+                android:inputType="number"
+                android:textColor="#4a4a4a"
+                android:textSize="@dimen/text_size_14"/>
+        </LinearLayout>
+
+        <include layout="@layout/left_padding_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="新密码"
+                android:textColor="#4a4a4a"
+                android:textSize="@dimen/text_size_14"/>
+
+            <EditText
+                android:id="@+id/et_new_psw"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="6-16位数字、字母或其他符号"
+                android:inputType="textPassword"
+                android:textColor="#4a4a4a"
+                android:textSize="@dimen/text_size_14"/>
+        </LinearLayout>
+
+        <include layout="@layout/left_padding_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="确认密码"
+                android:textColor="#4a4a4a"
+                android:textSize="@dimen/text_size_14"/>
+
+            <EditText
+                android:id="@+id/et_new_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请再次输入密码"
+                android:inputType="textPassword"
+                android:textColor="#4a4a4a"
+                android:textSize="@dimen/text_size_14"/>
+        </LinearLayout>
+
+        <include layout="@layout/left_padding_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg_selector"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="验证码"
+                android:textColor="#4a4a4a"
+                android:textSize="@dimen/text_size_14"/>
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_code"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入短信验证码"
+                android:inputType="number"
+                android:textColor="@color/font_black1"
+                android:textSize="@dimen/text_size_14"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toLeftOf="@id/tv_code"
+                android:background="@color/app_bg_color"/>
+
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/font_orange"
+                android:textSize="@dimen/text_size_14"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/item_bg_selector_common_5"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="重置密码"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14"/>
+
+</LinearLayout>
